@@ -1,0 +1,16 @@
+<h1>Wordcount</h1>
+
+<br>
+<a href="{% url 'home' %}">Back to homepage</a>
+<a href="{% url 'abouts' %}">About</a>
+
+<br>
+Welcome to wordcount website
+
+<form class="" action={% url 'count' %}>
+  {% csrf_token %}
+  <textarea name="fulltextarea" rows="10" cols="80"></textarea>
+  <br>
+  <input type="submit" name="" value="Count">
+
+</form>
